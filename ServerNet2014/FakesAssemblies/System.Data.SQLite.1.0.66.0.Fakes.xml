@@ -1,0 +1,2732 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Data.SQLite.1.0.66.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Data.SQLite.Fakes.ShimCollationSequence">
+            <summary>Shim type of System.Data.SQLite.CollationSequence</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimCollationSequence.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimCollationSequence.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimCollationSequence.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimCollationSequence.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimCollationSequence.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimCommitEventArgs">
+            <summary>Shim type of System.Data.SQLite.CommitEventArgs</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimCommitEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimCommitEventArgs.#ctor(System.Data.SQLite.CommitEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimCommitEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimCommitEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimCommitEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimCommitEventArgs.Constructor">
+            <summary>Sets the shim of CommitEventArgs.CommitEventArgs()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimCommitEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteCommand">
+            <summary>Shim type of System.Data.SQLite.SQLiteCommand</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.#ctor(System.Data.SQLite.SQLiteCommand)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.Bind(System.Data.IDbCommand)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.Bind(System.ICloneable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommand.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.Cancel">
+            <summary>Sets the shim of SQLiteCommand.Cancel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ClearCommands">
+            <summary>Sets the shim of SQLiteCommand.ClearCommands()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ClearDataReader">
+            <summary>Sets the shim of SQLiteCommand.ClearDataReader()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.Clone">
+            <summary>Sets the shim of SQLiteCommand.Clone()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CommandTextGet">
+            <summary>Sets the shim of SQLiteCommand.get_CommandText()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CommandTextSetString">
+            <summary>Sets the shim of SQLiteCommand.set_CommandText(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CommandTimeoutGet">
+            <summary>Sets the shim of SQLiteCommand.get_CommandTimeout()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CommandTimeoutSetInt32">
+            <summary>Sets the shim of SQLiteCommand.set_CommandTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CommandTypeGet">
+            <summary>Sets the shim of SQLiteCommand.get_CommandType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CommandTypeSetCommandType">
+            <summary>Sets the shim of SQLiteCommand.set_CommandType(CommandType value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ConnectionGet">
+            <summary>Sets the shim of SQLiteCommand.get_Connection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ConnectionSetSQLiteConnection">
+            <summary>Sets the shim of SQLiteCommand.set_Connection(SQLiteConnection value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.Constructor">
+            <summary>Sets the shim of SQLiteCommand.SQLiteCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ConstructorSQLiteCommand">
+            <summary>Sets the shim of SQLiteCommand.SQLiteCommand(SQLiteCommand source)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ConstructorSQLiteConnection">
+            <summary>Sets the shim of SQLiteCommand.SQLiteCommand(SQLiteConnection connection)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ConstructorString">
+            <summary>Sets the shim of SQLiteCommand.SQLiteCommand(String commandText)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ConstructorStringSQLiteConnection">
+            <summary>Sets the shim of SQLiteCommand.SQLiteCommand(String commandText, SQLiteConnection connection)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ConstructorStringSQLiteConnectionSQLiteTransaction">
+            <summary>Sets the shim of SQLiteCommand.SQLiteCommand(String commandText, SQLiteConnection connection, SQLiteTransaction transaction)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CreateDbParameter">
+            <summary>Sets the shim of SQLiteCommand.CreateDbParameter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.CreateParameter">
+            <summary>Sets the shim of SQLiteCommand.CreateParameter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DbConnectionGet">
+            <summary>Sets the shim of SQLiteCommand.get_DbConnection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DbConnectionSetDbConnection">
+            <summary>Sets the shim of SQLiteCommand.set_DbConnection(DbConnection value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DbParameterCollectionGet">
+            <summary>Sets the shim of SQLiteCommand.get_DbParameterCollection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DbTransactionGet">
+            <summary>Sets the shim of SQLiteCommand.get_DbTransaction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DbTransactionSetDbTransaction">
+            <summary>Sets the shim of SQLiteCommand.set_DbTransaction(DbTransaction value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DesignTimeVisibleGet">
+            <summary>Sets the shim of SQLiteCommand.get_DesignTimeVisible()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DesignTimeVisibleSetBoolean">
+            <summary>Sets the shim of SQLiteCommand.set_DesignTimeVisible(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.DisposeBoolean">
+            <summary>Sets the shim of SQLiteCommand.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ExecuteDbDataReaderCommandBehavior">
+            <summary>Sets the shim of SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ExecuteNonQuery">
+            <summary>Sets the shim of SQLiteCommand.ExecuteNonQuery()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ExecuteReader">
+            <summary>Sets the shim of SQLiteCommand.ExecuteReader()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ExecuteReaderCommandBehavior">
+            <summary>Sets the shim of SQLiteCommand.ExecuteReader(CommandBehavior behavior)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ExecuteScalar">
+            <summary>Sets the shim of SQLiteCommand.ExecuteScalar()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.InitializeForReader">
+            <summary>Sets the shim of SQLiteCommand.InitializeForReader()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.ParametersGet">
+            <summary>Sets the shim of SQLiteCommand.get_Parameters()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.Prepare">
+            <summary>Sets the shim of SQLiteCommand.Prepare()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.TransactionGet">
+            <summary>Sets the shim of SQLiteCommand.get_Transaction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.TransactionSetSQLiteTransaction">
+            <summary>Sets the shim of SQLiteCommand.set_Transaction(SQLiteTransaction value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.UpdatedRowSourceGet">
+            <summary>Sets the shim of SQLiteCommand.get_UpdatedRowSource()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.UpdatedRowSourceSetUpdateRowSource">
+            <summary>Sets the shim of SQLiteCommand.set_UpdatedRowSource(UpdateRowSource value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.Cancel">
+            <summary>Sets the shim of SQLiteCommand.Cancel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ClearCommands">
+            <summary>Sets the shim of SQLiteCommand.ClearCommands()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ClearDataReader">
+            <summary>Sets the shim of SQLiteCommand.ClearDataReader()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.Clone">
+            <summary>Sets the shim of SQLiteCommand.Clone()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CommandTextGet">
+            <summary>Sets the shim of SQLiteCommand.get_CommandText()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CommandTextSetString">
+            <summary>Sets the shim of SQLiteCommand.set_CommandText(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CommandTimeoutGet">
+            <summary>Sets the shim of SQLiteCommand.get_CommandTimeout()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CommandTimeoutSetInt32">
+            <summary>Sets the shim of SQLiteCommand.set_CommandTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CommandTypeGet">
+            <summary>Sets the shim of SQLiteCommand.get_CommandType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CommandTypeSetCommandType">
+            <summary>Sets the shim of SQLiteCommand.set_CommandType(CommandType value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ConnectionGet">
+            <summary>Sets the shim of SQLiteCommand.get_Connection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ConnectionSetSQLiteConnection">
+            <summary>Sets the shim of SQLiteCommand.set_Connection(SQLiteConnection value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CreateDbParameter">
+            <summary>Sets the shim of SQLiteCommand.CreateDbParameter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.CreateParameter">
+            <summary>Sets the shim of SQLiteCommand.CreateParameter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DbConnectionGet">
+            <summary>Sets the shim of SQLiteCommand.get_DbConnection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DbConnectionSetDbConnection">
+            <summary>Sets the shim of SQLiteCommand.set_DbConnection(DbConnection value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DbParameterCollectionGet">
+            <summary>Sets the shim of SQLiteCommand.get_DbParameterCollection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DbTransactionGet">
+            <summary>Sets the shim of SQLiteCommand.get_DbTransaction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DbTransactionSetDbTransaction">
+            <summary>Sets the shim of SQLiteCommand.set_DbTransaction(DbTransaction value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DesignTimeVisibleGet">
+            <summary>Sets the shim of SQLiteCommand.get_DesignTimeVisible()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DesignTimeVisibleSetBoolean">
+            <summary>Sets the shim of SQLiteCommand.set_DesignTimeVisible(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of SQLiteCommand.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ExecuteDbDataReaderCommandBehavior">
+            <summary>Sets the shim of SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ExecuteNonQuery">
+            <summary>Sets the shim of SQLiteCommand.ExecuteNonQuery()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ExecuteReader">
+            <summary>Sets the shim of SQLiteCommand.ExecuteReader()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ExecuteReaderCommandBehavior">
+            <summary>Sets the shim of SQLiteCommand.ExecuteReader(CommandBehavior behavior)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ExecuteScalar">
+            <summary>Sets the shim of SQLiteCommand.ExecuteScalar()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.InitializeForReader">
+            <summary>Sets the shim of SQLiteCommand.InitializeForReader()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.ParametersGet">
+            <summary>Sets the shim of SQLiteCommand.get_Parameters()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.Prepare">
+            <summary>Sets the shim of SQLiteCommand.Prepare()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.TransactionGet">
+            <summary>Sets the shim of SQLiteCommand.get_Transaction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.TransactionSetSQLiteTransaction">
+            <summary>Sets the shim of SQLiteCommand.set_Transaction(SQLiteTransaction value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.UpdatedRowSourceGet">
+            <summary>Sets the shim of SQLiteCommand.get_UpdatedRowSource()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommand.AllInstances.UpdatedRowSourceSetUpdateRowSource">
+            <summary>Sets the shim of SQLiteCommand.set_UpdatedRowSource(UpdateRowSource value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder">
+            <summary>Shim type of System.Data.SQLite.SQLiteCommandBuilder</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.#ctor(System.Data.SQLite.SQLiteCommandBuilder)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.ApplyParameterInfoDbParameterDataRowStatementTypeBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.ApplyParameterInfo(DbParameter parameter, DataRow row, StatementType statementType, Boolean whereClause)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.CatalogLocationGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_CatalogLocation()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.CatalogLocationSetCatalogLocation">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_CatalogLocation(CatalogLocation value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.CatalogSeparatorGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_CatalogSeparator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.CatalogSeparatorSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_CatalogSeparator(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.Constructor">
+            <summary>Sets the shim of SQLiteCommandBuilder.SQLiteCommandBuilder()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.ConstructorSQLiteDataAdapter">
+            <summary>Sets the shim of SQLiteCommandBuilder.SQLiteCommandBuilder(SQLiteDataAdapter adp)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.DataAdapterGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_DataAdapter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.DataAdapterSetSQLiteDataAdapter">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_DataAdapter(SQLiteDataAdapter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetDeleteCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetDeleteCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetDeleteCommandBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetDeleteCommand(Boolean useColumnsForParameterNames)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetInsertCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetInsertCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetInsertCommandBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetInsertCommand(Boolean useColumnsForParameterNames)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetParameterNameInt32">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetParameterName(Int32 parameterOrdinal)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetParameterNameString">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetParameterName(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetParameterPlaceholderInt32">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetParameterPlaceholder(Int32 parameterOrdinal)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetSchemaTableDbCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetSchemaTable(DbCommand sourceCommand)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetUpdateCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetUpdateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.GetUpdateCommandBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetUpdateCommand(Boolean useColumnsForParameterNames)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.HasSchemaPrimaryKeyDataTable">
+            <summary>Sets the shim of SQLiteCommandBuilder.HasSchemaPrimaryKey(DataTable schema)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.QuoteIdentifierString">
+            <summary>Sets the shim of SQLiteCommandBuilder.QuoteIdentifier(String unquotedIdentifier)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.QuotePrefixGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_QuotePrefix()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.QuotePrefixSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_QuotePrefix(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.QuoteSuffixGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_QuoteSuffix()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.QuoteSuffixSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_QuoteSuffix(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.ResetIsUniqueSchemaColumnDataTable">
+            <summary>Sets the shim of SQLiteCommandBuilder.ResetIsUniqueSchemaColumn(DataTable schema)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.RowUpdatingEventHandlerObjectRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteCommandBuilder.RowUpdatingEventHandler(Object sender, RowUpdatingEventArgs e)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.SchemaSeparatorGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_SchemaSeparator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.SchemaSeparatorSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_SchemaSeparator(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.SetRowUpdatingHandlerDbDataAdapter">
+            <summary>Sets the shim of SQLiteCommandBuilder.SetRowUpdatingHandler(DbDataAdapter adapter)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.UnquoteIdentifierString">
+            <summary>Sets the shim of SQLiteCommandBuilder.UnquoteIdentifier(String quotedIdentifier)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.ApplyParameterInfoDbParameterDataRowStatementTypeBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.ApplyParameterInfo(DbParameter parameter, DataRow row, StatementType statementType, Boolean whereClause)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.CatalogLocationGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_CatalogLocation()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.CatalogLocationSetCatalogLocation">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_CatalogLocation(CatalogLocation value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.CatalogSeparatorGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_CatalogSeparator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.CatalogSeparatorSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_CatalogSeparator(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.DataAdapterGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_DataAdapter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.DataAdapterSetSQLiteDataAdapter">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_DataAdapter(SQLiteDataAdapter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetDeleteCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetDeleteCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetDeleteCommandBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetDeleteCommand(Boolean useColumnsForParameterNames)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetInsertCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetInsertCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetInsertCommandBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetInsertCommand(Boolean useColumnsForParameterNames)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetParameterNameInt32">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetParameterName(Int32 parameterOrdinal)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetParameterNameString">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetParameterName(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetParameterPlaceholderInt32">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetParameterPlaceholder(Int32 parameterOrdinal)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetSchemaTableDbCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetSchemaTable(DbCommand sourceCommand)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetUpdateCommand">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetUpdateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.GetUpdateCommandBoolean">
+            <summary>Sets the shim of SQLiteCommandBuilder.GetUpdateCommand(Boolean useColumnsForParameterNames)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.HasSchemaPrimaryKeyDataTable">
+            <summary>Sets the shim of SQLiteCommandBuilder.HasSchemaPrimaryKey(DataTable schema)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.QuoteIdentifierString">
+            <summary>Sets the shim of SQLiteCommandBuilder.QuoteIdentifier(String unquotedIdentifier)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.QuotePrefixGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_QuotePrefix()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.QuotePrefixSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_QuotePrefix(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.QuoteSuffixGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_QuoteSuffix()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.QuoteSuffixSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_QuoteSuffix(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.ResetIsUniqueSchemaColumnDataTable">
+            <summary>Sets the shim of SQLiteCommandBuilder.ResetIsUniqueSchemaColumn(DataTable schema)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.RowUpdatingEventHandlerObjectRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteCommandBuilder.RowUpdatingEventHandler(Object sender, RowUpdatingEventArgs e)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.SchemaSeparatorGet">
+            <summary>Sets the shim of SQLiteCommandBuilder.get_SchemaSeparator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.SchemaSeparatorSetString">
+            <summary>Sets the shim of SQLiteCommandBuilder.set_SchemaSeparator(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.SetRowUpdatingHandlerDbDataAdapter">
+            <summary>Sets the shim of SQLiteCommandBuilder.SetRowUpdatingHandler(DbDataAdapter adapter)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteCommandBuilder.AllInstances.UnquoteIdentifierString">
+            <summary>Sets the shim of SQLiteCommandBuilder.UnquoteIdentifier(String quotedIdentifier)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteConnection">
+            <summary>Shim type of System.Data.SQLite.SQLiteConnection</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.#ctor(System.Data.SQLite.SQLiteConnection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.Bind(System.Data.IDbConnection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.Bind(System.ICloneable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnection.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.BeginDbTransactionIsolationLevel">
+            <summary>Sets the shim of SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.BeginTransaction">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.BeginTransactionBoolean">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction(Boolean deferredLock)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.BeginTransactionIsolationLevel">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction(IsolationLevel isolationLevel)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.BeginTransactionIsolationLevelBoolean">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferredLock)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ChangeDatabaseString">
+            <summary>Sets the shim of SQLiteConnection.ChangeDatabase(String databaseName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ChangePasswordByteArray">
+            <summary>Sets the shim of SQLiteConnection.ChangePassword(Byte[] newPassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ChangePasswordString">
+            <summary>Sets the shim of SQLiteConnection.ChangePassword(String newPassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ClearAllPools">
+            <summary>Sets the shim of SQLiteConnection.ClearAllPools()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ClearPoolSQLiteConnection">
+            <summary>Sets the shim of SQLiteConnection.ClearPool(SQLiteConnection connection)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Clone">
+            <summary>Sets the shim of SQLiteConnection.Clone()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Close">
+            <summary>Sets the shim of SQLiteConnection.Close()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.CommitAddSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.add_Commit(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.CommitCallbackIntPtr">
+            <summary>Sets the shim of SQLiteConnection.CommitCallback(IntPtr parg)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.CommitRemoveSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_Commit(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ConnectionStringGet">
+            <summary>Sets the shim of SQLiteConnection.get_ConnectionString()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ConnectionStringSetString">
+            <summary>Sets the shim of SQLiteConnection.set_ConnectionString(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Constructor">
+            <summary>Sets the shim of SQLiteConnection.SQLiteConnection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ConstructorSQLiteConnection">
+            <summary>Sets the shim of SQLiteConnection.SQLiteConnection(SQLiteConnection connection)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ConstructorString">
+            <summary>Sets the shim of SQLiteConnection.SQLiteConnection(String connectionString)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.CreateCommand">
+            <summary>Sets the shim of SQLiteConnection.CreateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.CreateDbCommand">
+            <summary>Sets the shim of SQLiteConnection.CreateDbCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.CreateFileString">
+            <summary>Sets the shim of SQLiteConnection.CreateFile(String databaseFileName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.DataSourceGet">
+            <summary>Sets the shim of SQLiteConnection.get_DataSource()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.DatabaseGet">
+            <summary>Sets the shim of SQLiteConnection.get_Database()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.DbProviderFactoryGet">
+            <summary>Sets the shim of SQLiteConnection.get_DbProviderFactory()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.DefaultTimeoutGet">
+            <summary>Sets the shim of SQLiteConnection.get_DefaultTimeout()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.DefaultTimeoutSetInt32">
+            <summary>Sets the shim of SQLiteConnection.set_DefaultTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.DisposeBoolean">
+            <summary>Sets the shim of SQLiteConnection.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.EnlistTransactionTransaction">
+            <summary>Sets the shim of SQLiteConnection.EnlistTransaction(Transaction transaction)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ExpandFileNameString">
+            <summary>Sets the shim of SQLiteConnection.ExpandFileName(String sourceFile)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.FindKeySortedListOfStringStringStringString">
+            <summary>Sets the shim of SQLiteConnection.FindKey(SortedList`2&lt;String,String&gt; items, String key, String defValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.GetSchema">
+            <summary>Sets the shim of SQLiteConnection.GetSchema()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.GetSchemaString">
+            <summary>Sets the shim of SQLiteConnection.GetSchema(String collectionName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.GetSchemaStringStringArray">
+            <summary>Sets the shim of SQLiteConnection.GetSchema(String collectionName, String[] restrictionValues)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.MapUriPathString">
+            <summary>Sets the shim of SQLiteConnection.MapUriPath(String path)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.OnStateChangeConnectionState">
+            <summary>Sets the shim of SQLiteConnection.OnStateChange(ConnectionState newState)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Open">
+            <summary>Sets the shim of SQLiteConnection.Open()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ParseConnectionStringString">
+            <summary>Sets the shim of SQLiteConnection.ParseConnectionString(String connectionString)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.RollBackAddEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add_RollBack(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.RollBackRemoveEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_RollBack(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.RollbackCallbackIntPtr">
+            <summary>Sets the shim of SQLiteConnection.RollbackCallback(IntPtr parg)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.SQLiteVersionGet">
+            <summary>Sets the shim of SQLiteConnection.get_SQLiteVersion()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_CatalogsString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Catalogs(String strCatalog)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_ColumnsStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Columns(String strCatalog, String strTable, String strColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_DataSourceInformation">
+            <summary>Sets the shim of SQLiteConnection.Schema_DataSourceInformation()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_DataTypes">
+            <summary>Sets the shim of SQLiteConnection.Schema_DataTypes()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_ForeignKeysStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_ForeignKeys(String strCatalog, String strTable, String strKeyName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_IndexColumnsStringStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_IndexColumns(String strCatalog, String strTable, String strIndex, String strColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_IndexesStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Indexes(String strCatalog, String strTable, String strIndex)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_MetaDataCollections">
+            <summary>Sets the shim of SQLiteConnection.Schema_MetaDataCollections()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_ReservedWords">
+            <summary>Sets the shim of SQLiteConnection.Schema_ReservedWords()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_TablesStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Tables(String strCatalog, String strTable, String strType)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_TriggersStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Triggers(String catalog, String table, String triggerName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_ViewColumnsStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_ViewColumns(String strCatalog, String strView, String strColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.Schema_ViewsStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Views(String strCatalog, String strView)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.ServerVersionGet">
+            <summary>Sets the shim of SQLiteConnection.get_ServerVersion()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.SetPasswordByteArray">
+            <summary>Sets the shim of SQLiteConnection.SetPassword(Byte[] databasePassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.SetPasswordString">
+            <summary>Sets the shim of SQLiteConnection.SetPassword(String databasePassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.StateChangeAddStateChangeEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add_StateChange(StateChangeEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.StateChangeRemoveStateChangeEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_StateChange(StateChangeEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.StateGet">
+            <summary>Sets the shim of SQLiteConnection.get_State()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.UpdateAddSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add_Update(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.UpdateCallbackIntPtrInt32IntPtrIntPtrInt64">
+            <summary>Sets the shim of SQLiteConnection.UpdateCallback(IntPtr puser, Int32 type, IntPtr database, IntPtr table, Int64 rowid)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.UpdateRemoveSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_Update(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection._commitHandlerAddSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.add__commitHandler(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection._commitHandlerRemoveSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.remove__commitHandler(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection._rollbackHandlerAddEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add__rollbackHandler(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection._rollbackHandlerRemoveEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove__rollbackHandler(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection._updateHandlerAddSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add__updateHandler(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection._updateHandlerRemoveSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove__updateHandler(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.BeginDbTransactionIsolationLevel">
+            <summary>Sets the shim of SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.BeginTransaction">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.BeginTransactionBoolean">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction(Boolean deferredLock)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.BeginTransactionIsolationLevel">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction(IsolationLevel isolationLevel)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.BeginTransactionIsolationLevelBoolean">
+            <summary>Sets the shim of SQLiteConnection.BeginTransaction(IsolationLevel isolationLevel, Boolean deferredLock)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.ChangeDatabaseString">
+            <summary>Sets the shim of SQLiteConnection.ChangeDatabase(String databaseName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.ChangePasswordByteArray">
+            <summary>Sets the shim of SQLiteConnection.ChangePassword(Byte[] newPassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.ChangePasswordString">
+            <summary>Sets the shim of SQLiteConnection.ChangePassword(String newPassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Clone">
+            <summary>Sets the shim of SQLiteConnection.Clone()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Close">
+            <summary>Sets the shim of SQLiteConnection.Close()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.CommitAddSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.add_Commit(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.CommitCallbackIntPtr">
+            <summary>Sets the shim of SQLiteConnection.CommitCallback(IntPtr parg)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.CommitRemoveSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_Commit(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.ConnectionStringGet">
+            <summary>Sets the shim of SQLiteConnection.get_ConnectionString()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.ConnectionStringSetString">
+            <summary>Sets the shim of SQLiteConnection.set_ConnectionString(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.CreateCommand">
+            <summary>Sets the shim of SQLiteConnection.CreateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.CreateDbCommand">
+            <summary>Sets the shim of SQLiteConnection.CreateDbCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.DataSourceGet">
+            <summary>Sets the shim of SQLiteConnection.get_DataSource()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.DatabaseGet">
+            <summary>Sets the shim of SQLiteConnection.get_Database()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.DbProviderFactoryGet">
+            <summary>Sets the shim of SQLiteConnection.get_DbProviderFactory()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.DefaultTimeoutGet">
+            <summary>Sets the shim of SQLiteConnection.get_DefaultTimeout()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.DefaultTimeoutSetInt32">
+            <summary>Sets the shim of SQLiteConnection.set_DefaultTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of SQLiteConnection.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.EnlistTransactionTransaction">
+            <summary>Sets the shim of SQLiteConnection.EnlistTransaction(Transaction transaction)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.ExpandFileNameString">
+            <summary>Sets the shim of SQLiteConnection.ExpandFileName(String sourceFile)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.GetSchema">
+            <summary>Sets the shim of SQLiteConnection.GetSchema()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.GetSchemaString">
+            <summary>Sets the shim of SQLiteConnection.GetSchema(String collectionName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.GetSchemaStringStringArray">
+            <summary>Sets the shim of SQLiteConnection.GetSchema(String collectionName, String[] restrictionValues)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.OnStateChangeConnectionState">
+            <summary>Sets the shim of SQLiteConnection.OnStateChange(ConnectionState newState)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Open">
+            <summary>Sets the shim of SQLiteConnection.Open()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.RollBackAddEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add_RollBack(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.RollBackRemoveEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_RollBack(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.RollbackCallbackIntPtr">
+            <summary>Sets the shim of SQLiteConnection.RollbackCallback(IntPtr parg)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_CatalogsString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Catalogs(String strCatalog)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_ColumnsStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Columns(String strCatalog, String strTable, String strColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_DataSourceInformation">
+            <summary>Sets the shim of SQLiteConnection.Schema_DataSourceInformation()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_DataTypes">
+            <summary>Sets the shim of SQLiteConnection.Schema_DataTypes()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_ForeignKeysStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_ForeignKeys(String strCatalog, String strTable, String strKeyName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_IndexColumnsStringStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_IndexColumns(String strCatalog, String strTable, String strIndex, String strColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_IndexesStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Indexes(String strCatalog, String strTable, String strIndex)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_TablesStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Tables(String strCatalog, String strTable, String strType)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_TriggersStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Triggers(String catalog, String table, String triggerName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_ViewColumnsStringStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_ViewColumns(String strCatalog, String strView, String strColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.Schema_ViewsStringString">
+            <summary>Sets the shim of SQLiteConnection.Schema_Views(String strCatalog, String strView)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.ServerVersionGet">
+            <summary>Sets the shim of SQLiteConnection.get_ServerVersion()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.SetPasswordByteArray">
+            <summary>Sets the shim of SQLiteConnection.SetPassword(Byte[] databasePassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.SetPasswordString">
+            <summary>Sets the shim of SQLiteConnection.SetPassword(String databasePassword)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.StateChangeAddStateChangeEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add_StateChange(StateChangeEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.StateChangeRemoveStateChangeEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_StateChange(StateChangeEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.StateGet">
+            <summary>Sets the shim of SQLiteConnection.get_State()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.UpdateAddSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add_Update(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.UpdateCallbackIntPtrInt32IntPtrIntPtrInt64">
+            <summary>Sets the shim of SQLiteConnection.UpdateCallback(IntPtr puser, Int32 type, IntPtr database, IntPtr table, Int64 rowid)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances.UpdateRemoveSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove_Update(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances._commitHandlerAddSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.add__commitHandler(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances._commitHandlerRemoveSQLiteCommitHandler">
+            <summary>Sets the shim of SQLiteConnection.remove__commitHandler(SQLiteCommitHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances._rollbackHandlerAddEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add__rollbackHandler(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances._rollbackHandlerRemoveEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove__rollbackHandler(EventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances._updateHandlerAddSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.add__updateHandler(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnection.AllInstances._updateHandlerRemoveSQLiteUpdateEventHandler">
+            <summary>Sets the shim of SQLiteConnection.remove__updateHandler(SQLiteUpdateEventHandler value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder">
+            <summary>Shim type of System.Data.SQLite.SQLiteConnectionStringBuilder</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.#ctor(System.Data.SQLite.SQLiteConnectionStringBuilder)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.Bind(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.Bind(System.Collections.IDictionary)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.BinaryGUIDGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_BinaryGUID()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.BinaryGUIDSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_BinaryGUID(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.CacheSizeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_CacheSize()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.CacheSizeSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_CacheSize(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.Constructor">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.SQLiteConnectionStringBuilder()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.ConstructorString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.SQLiteConnectionStringBuilder(String connectionString)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DataSourceGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DataSource()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DataSourceSetString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DataSource(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DateTimeFormatGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DateTimeFormat()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DateTimeFormatSetSQLiteDateFormats">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DateTimeFormat(SQLiteDateFormats value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DefaultIsolationLevelGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DefaultIsolationLevel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DefaultIsolationLevelSetIsolationLevel">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DefaultIsolationLevel(IsolationLevel value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DefaultTimeoutGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DefaultTimeout()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.DefaultTimeoutSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DefaultTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.EnlistGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Enlist()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.EnlistSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Enlist(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.FailIfMissingGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_FailIfMissing()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.FailIfMissingSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_FailIfMissing(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.FallbackGetPropertiesHashtable">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.FallbackGetProperties(Hashtable propertyList)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.InitializeString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.Initialize(String cnnString)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.JournalModeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_JournalMode()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.JournalModeSetSQLiteJournalModeEnum">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_JournalMode(SQLiteJournalModeEnum value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.LegacyFormatGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_LegacyFormat()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.LegacyFormatSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_LegacyFormat(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.MaxPageCountGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_MaxPageCount()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.MaxPageCountSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_MaxPageCount(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.PageSizeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_PageSize()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.PageSizeSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_PageSize(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.PasswordGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Password()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.PasswordSetString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Password(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.PoolingGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Pooling()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.PoolingSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Pooling(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.ReadOnlyGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_ReadOnly()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.ReadOnlySetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_ReadOnly(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.SyncModeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_SyncMode()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.SyncModeSetSynchronizationModes">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_SyncMode(SynchronizationModes value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.TryGetValueStringObjectOut">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.TryGetValue(String keyword, Object&amp; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.UriGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Uri()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.UriSetString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Uri(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.UseUTF16EncodingGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_UseUTF16Encoding()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.UseUTF16EncodingSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_UseUTF16Encoding(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.VersionGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Version()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.VersionSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Version(Int32 value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.BinaryGUIDGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_BinaryGUID()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.BinaryGUIDSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_BinaryGUID(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.CacheSizeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_CacheSize()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.CacheSizeSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_CacheSize(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DataSourceGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DataSource()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DataSourceSetString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DataSource(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DateTimeFormatGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DateTimeFormat()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DateTimeFormatSetSQLiteDateFormats">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DateTimeFormat(SQLiteDateFormats value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DefaultIsolationLevelGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DefaultIsolationLevel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DefaultIsolationLevelSetIsolationLevel">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DefaultIsolationLevel(IsolationLevel value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DefaultTimeoutGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_DefaultTimeout()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.DefaultTimeoutSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_DefaultTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.EnlistGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Enlist()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.EnlistSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Enlist(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.FailIfMissingGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_FailIfMissing()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.FailIfMissingSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_FailIfMissing(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.FallbackGetPropertiesHashtable">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.FallbackGetProperties(Hashtable propertyList)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.InitializeString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.Initialize(String cnnString)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.JournalModeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_JournalMode()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.JournalModeSetSQLiteJournalModeEnum">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_JournalMode(SQLiteJournalModeEnum value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.LegacyFormatGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_LegacyFormat()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.LegacyFormatSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_LegacyFormat(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.MaxPageCountGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_MaxPageCount()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.MaxPageCountSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_MaxPageCount(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.PageSizeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_PageSize()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.PageSizeSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_PageSize(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.PasswordGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Password()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.PasswordSetString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Password(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.PoolingGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Pooling()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.PoolingSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Pooling(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.ReadOnlyGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_ReadOnly()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.ReadOnlySetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_ReadOnly(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.SyncModeGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_SyncMode()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.SyncModeSetSynchronizationModes">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_SyncMode(SynchronizationModes value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.TryGetValueStringObjectOut">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.TryGetValue(String keyword, Object&amp; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.UriGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Uri()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.UriSetString">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Uri(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.UseUTF16EncodingGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_UseUTF16Encoding()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.UseUTF16EncodingSetBoolean">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_UseUTF16Encoding(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.VersionGet">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.get_Version()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConnectionStringBuilder.AllInstances.VersionSetInt32">
+            <summary>Sets the shim of SQLiteConnectionStringBuilder.set_Version(Int32 value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteConvert">
+            <summary>Shim type of System.Data.SQLite.SQLiteConvert</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConvert.#ctor(System.Data.SQLite.SQLiteConvert)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConvert.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteConvert.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ConstructorSQLiteDateFormats">
+            <summary>Sets the shim of SQLiteConvert.SQLiteConvert(SQLiteDateFormats fmt)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.DbTypeToColumnSizeDbType">
+            <summary>Sets the shim of SQLiteConvert.DbTypeToColumnSize(DbType typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.DbTypeToNumericPrecisionDbType">
+            <summary>Sets the shim of SQLiteConvert.DbTypeToNumericPrecision(DbType typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.DbTypeToNumericScaleDbType">
+            <summary>Sets the shim of SQLiteConvert.DbTypeToNumericScale(DbType typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.DbTypeToTypeDbType">
+            <summary>Sets the shim of SQLiteConvert.DbTypeToType(DbType typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.DbTypeToTypeNameDbType">
+            <summary>Sets the shim of SQLiteConvert.DbTypeToTypeName(DbType typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.SplitStringChar">
+            <summary>Sets the shim of SQLiteConvert.Split(String source, Char separator)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.StaticConstructor">
+            <summary>Sets the shim of SQLiteConvert.SQLiteConvert()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToBooleanObject">
+            <summary>Sets the shim of SQLiteConvert.ToBoolean(Object source)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToBooleanString">
+            <summary>Sets the shim of SQLiteConvert.ToBoolean(String source)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToDateTimeDouble">
+            <summary>Sets the shim of SQLiteConvert.ToDateTime(Double julianDay)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToDateTimeIntPtrInt32">
+            <summary>Sets the shim of SQLiteConvert.ToDateTime(IntPtr ptr, Int32 len)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToDateTimeString">
+            <summary>Sets the shim of SQLiteConvert.ToDateTime(String dateText)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToJulianDayDateTime">
+            <summary>Sets the shim of SQLiteConvert.ToJulianDay(DateTime value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToStringDateTime">
+            <summary>Sets the shim of SQLiteConvert.ToString(DateTime dateValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToStringIntPtrInt32">
+            <summary>Sets the shim of SQLiteConvert.ToString(IntPtr nativestring, Int32 nativestringlen)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToUTF8DateTime">
+            <summary>Sets the shim of SQLiteConvert.ToUTF8(DateTime dateTimeValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.ToUTF8String">
+            <summary>Sets the shim of SQLiteConvert.ToUTF8(String sourceText)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.TypeNameToDbTypeString">
+            <summary>Sets the shim of SQLiteConvert.TypeNameToDbType(String Name)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.TypeToAffinityType">
+            <summary>Sets the shim of SQLiteConvert.TypeToAffinity(Type typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.TypeToDbTypeType">
+            <summary>Sets the shim of SQLiteConvert.TypeToDbType(Type typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.UTF8ToStringIntPtrInt32">
+            <summary>Sets the shim of SQLiteConvert.UTF8ToString(IntPtr nativestring, Int32 nativestringlen)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances.ToDateTimeDouble">
+            <summary>Sets the shim of SQLiteConvert.ToDateTime(Double julianDay)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances.ToDateTimeIntPtrInt32">
+            <summary>Sets the shim of SQLiteConvert.ToDateTime(IntPtr ptr, Int32 len)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances.ToDateTimeString">
+            <summary>Sets the shim of SQLiteConvert.ToDateTime(String dateText)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances.ToJulianDayDateTime">
+            <summary>Sets the shim of SQLiteConvert.ToJulianDay(DateTime value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances.ToStringDateTime">
+            <summary>Sets the shim of SQLiteConvert.ToString(DateTime dateValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances.ToStringIntPtrInt32">
+            <summary>Sets the shim of SQLiteConvert.ToString(IntPtr nativestring, Int32 nativestringlen)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteConvert.AllInstances.ToUTF8DateTime">
+            <summary>Sets the shim of SQLiteConvert.ToUTF8(DateTime dateTimeValue)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter">
+            <summary>Shim type of System.Data.SQLite.SQLiteDataAdapter</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.#ctor(System.Data.SQLite.SQLiteDataAdapter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.Bind(System.Data.IDataAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.Bind(System.Data.IDbDataAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.Bind(System.ICloneable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.Constructor">
+            <summary>Sets the shim of SQLiteDataAdapter.SQLiteDataAdapter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.ConstructorSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.SQLiteDataAdapter(SQLiteCommand cmd)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.ConstructorStringSQLiteConnection">
+            <summary>Sets the shim of SQLiteDataAdapter.SQLiteDataAdapter(String commandText, SQLiteConnection connection)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.ConstructorStringString">
+            <summary>Sets the shim of SQLiteDataAdapter.SQLiteDataAdapter(String commandText, String connectionString)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.DeleteCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_DeleteCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.DeleteCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_DeleteCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.FindBuilderMulticastDelegate">
+            <summary>Sets the shim of SQLiteDataAdapter.FindBuilder(MulticastDelegate mcd)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.InsertCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_InsertCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.InsertCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_InsertCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.OnRowUpdatedRowUpdatedEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.OnRowUpdated(RowUpdatedEventArgs value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.OnRowUpdatingRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.OnRowUpdating(RowUpdatingEventArgs value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.RowUpdatedAddEventHandlerOfRowUpdatedEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.add_RowUpdated(EventHandler`1&lt;RowUpdatedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.RowUpdatedRemoveEventHandlerOfRowUpdatedEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.remove_RowUpdated(EventHandler`1&lt;RowUpdatedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.RowUpdatingAddEventHandlerOfRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.add_RowUpdating(EventHandler`1&lt;RowUpdatingEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.RowUpdatingRemoveEventHandlerOfRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.remove_RowUpdating(EventHandler`1&lt;RowUpdatingEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.SelectCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_SelectCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.SelectCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_SelectCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.StaticConstructor">
+            <summary>Sets the shim of SQLiteDataAdapter.SQLiteDataAdapter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.UpdateCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_UpdateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.UpdateCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_UpdateCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.DeleteCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_DeleteCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.DeleteCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_DeleteCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.InsertCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_InsertCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.InsertCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_InsertCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.OnRowUpdatedRowUpdatedEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.OnRowUpdated(RowUpdatedEventArgs value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.OnRowUpdatingRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.OnRowUpdating(RowUpdatingEventArgs value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.RowUpdatedAddEventHandlerOfRowUpdatedEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.add_RowUpdated(EventHandler`1&lt;RowUpdatedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.RowUpdatedRemoveEventHandlerOfRowUpdatedEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.remove_RowUpdated(EventHandler`1&lt;RowUpdatedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.RowUpdatingAddEventHandlerOfRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.add_RowUpdating(EventHandler`1&lt;RowUpdatingEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.RowUpdatingRemoveEventHandlerOfRowUpdatingEventArgs">
+            <summary>Sets the shim of SQLiteDataAdapter.remove_RowUpdating(EventHandler`1&lt;RowUpdatingEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.SelectCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_SelectCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.SelectCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_SelectCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.UpdateCommandGet">
+            <summary>Sets the shim of SQLiteDataAdapter.get_UpdateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataAdapter.AllInstances.UpdateCommandSetSQLiteCommand">
+            <summary>Sets the shim of SQLiteDataAdapter.set_UpdateCommand(SQLiteCommand value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteDataReader">
+            <summary>Shim type of System.Data.SQLite.SQLiteDataReader</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.#ctor(System.Data.SQLite.SQLiteDataReader)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Bind(System.Data.IDataReader)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Bind(System.Data.IDataRecord)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Cancel">
+            <summary>Sets the shim of SQLiteDataReader.Cancel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.CheckClosed">
+            <summary>Sets the shim of SQLiteDataReader.CheckClosed()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.CheckValidRow">
+            <summary>Sets the shim of SQLiteDataReader.CheckValidRow()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Close">
+            <summary>Sets the shim of SQLiteDataReader.Close()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.ConstructorSQLiteCommandCommandBehavior">
+            <summary>Sets the shim of SQLiteDataReader.SQLiteDataReader(SQLiteCommand cmd, CommandBehavior behave)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.DepthGet">
+            <summary>Sets the shim of SQLiteDataReader.get_Depth()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.FieldCountGet">
+            <summary>Sets the shim of SQLiteDataReader.get_FieldCount()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetBooleanInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetBoolean(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetByteInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetByte(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetBytesInt32Int64ByteArrayInt32Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetBytes(Int32 i, Int64 fieldOffset, Byte[] buffer, Int32 bufferoffset, Int32 length)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetCharInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetChar(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetCharsInt32Int64CharArrayInt32Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetChars(Int32 i, Int64 fieldoffset, Char[] buffer, Int32 bufferoffset, Int32 length)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetDataTypeNameInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDataTypeName(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetDateTimeInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDateTime(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetDecimalInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDecimal(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetDoubleInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDouble(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetEnumerator">
+            <summary>Sets the shim of SQLiteDataReader.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetFieldTypeInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetFieldType(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetFloatInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetFloat(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetGuidInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetGuid(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetInt16Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetInt16(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetInt32Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetInt32(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetInt64Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetInt64(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetNameInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetName(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetOrdinalString">
+            <summary>Sets the shim of SQLiteDataReader.GetOrdinal(String name)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetSchemaTable">
+            <summary>Sets the shim of SQLiteDataReader.GetSchemaTable()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetSchemaTableBooleanBoolean">
+            <summary>Sets the shim of SQLiteDataReader.GetSchemaTable(Boolean wantUniqueInfo, Boolean wantDefaultValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetStringInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetString(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetValueInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetValue(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.GetValuesObjectArray">
+            <summary>Sets the shim of SQLiteDataReader.GetValues(Object[] values)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.HasRowsGet">
+            <summary>Sets the shim of SQLiteDataReader.get_HasRows()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.IsClosedGet">
+            <summary>Sets the shim of SQLiteDataReader.get_IsClosed()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.IsDBNullInt32">
+            <summary>Sets the shim of SQLiteDataReader.IsDBNull(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.ItemGetInt32">
+            <summary>Sets the shim of SQLiteDataReader.get_Item(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.ItemGetString">
+            <summary>Sets the shim of SQLiteDataReader.get_Item(String name)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.LoadKeyInfo">
+            <summary>Sets the shim of SQLiteDataReader.LoadKeyInfo()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.NextResult">
+            <summary>Sets the shim of SQLiteDataReader.NextResult()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.Read">
+            <summary>Sets the shim of SQLiteDataReader.Read()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.RecordsAffectedGet">
+            <summary>Sets the shim of SQLiteDataReader.get_RecordsAffected()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.VerifyTypeInt32DbType">
+            <summary>Sets the shim of SQLiteDataReader.VerifyType(Int32 i, DbType typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.VisibleFieldCountGet">
+            <summary>Sets the shim of SQLiteDataReader.get_VisibleFieldCount()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.Cancel">
+            <summary>Sets the shim of SQLiteDataReader.Cancel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.CheckClosed">
+            <summary>Sets the shim of SQLiteDataReader.CheckClosed()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.CheckValidRow">
+            <summary>Sets the shim of SQLiteDataReader.CheckValidRow()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.Close">
+            <summary>Sets the shim of SQLiteDataReader.Close()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.DepthGet">
+            <summary>Sets the shim of SQLiteDataReader.get_Depth()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.FieldCountGet">
+            <summary>Sets the shim of SQLiteDataReader.get_FieldCount()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetBooleanInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetBoolean(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetByteInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetByte(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetBytesInt32Int64ByteArrayInt32Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetBytes(Int32 i, Int64 fieldOffset, Byte[] buffer, Int32 bufferoffset, Int32 length)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetCharInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetChar(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetCharsInt32Int64CharArrayInt32Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetChars(Int32 i, Int64 fieldoffset, Char[] buffer, Int32 bufferoffset, Int32 length)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetDataTypeNameInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDataTypeName(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetDateTimeInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDateTime(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetDecimalInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDecimal(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetDoubleInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetDouble(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetEnumerator">
+            <summary>Sets the shim of SQLiteDataReader.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetFieldTypeInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetFieldType(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetFloatInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetFloat(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetGuidInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetGuid(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetInt16Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetInt16(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetInt32Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetInt32(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetInt64Int32">
+            <summary>Sets the shim of SQLiteDataReader.GetInt64(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetNameInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetName(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetOrdinalString">
+            <summary>Sets the shim of SQLiteDataReader.GetOrdinal(String name)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetSchemaTable">
+            <summary>Sets the shim of SQLiteDataReader.GetSchemaTable()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetSchemaTableBooleanBoolean">
+            <summary>Sets the shim of SQLiteDataReader.GetSchemaTable(Boolean wantUniqueInfo, Boolean wantDefaultValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetStringInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetString(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetValueInt32">
+            <summary>Sets the shim of SQLiteDataReader.GetValue(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.GetValuesObjectArray">
+            <summary>Sets the shim of SQLiteDataReader.GetValues(Object[] values)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.HasRowsGet">
+            <summary>Sets the shim of SQLiteDataReader.get_HasRows()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.IsClosedGet">
+            <summary>Sets the shim of SQLiteDataReader.get_IsClosed()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.IsDBNullInt32">
+            <summary>Sets the shim of SQLiteDataReader.IsDBNull(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of SQLiteDataReader.get_Item(Int32 i)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.ItemGetString">
+            <summary>Sets the shim of SQLiteDataReader.get_Item(String name)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.LoadKeyInfo">
+            <summary>Sets the shim of SQLiteDataReader.LoadKeyInfo()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.NextResult">
+            <summary>Sets the shim of SQLiteDataReader.NextResult()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.Read">
+            <summary>Sets the shim of SQLiteDataReader.Read()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.RecordsAffectedGet">
+            <summary>Sets the shim of SQLiteDataReader.get_RecordsAffected()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.VerifyTypeInt32DbType">
+            <summary>Sets the shim of SQLiteDataReader.VerifyType(Int32 i, DbType typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteDataReader.AllInstances.VisibleFieldCountGet">
+            <summary>Sets the shim of SQLiteDataReader.get_VisibleFieldCount()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteException">
+            <summary>Shim type of System.Data.SQLite.SQLiteException</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteException.#ctor(System.Data.SQLite.SQLiteException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.Constructor">
+            <summary>Sets the shim of SQLiteException.SQLiteException()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.ConstructorInt32String">
+            <summary>Sets the shim of SQLiteException.SQLiteException(Int32 errorCode, String extendedInformation)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of SQLiteException.SQLiteException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.ConstructorString">
+            <summary>Sets the shim of SQLiteException.SQLiteException(String message)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.ConstructorStringException">
+            <summary>Sets the shim of SQLiteException.SQLiteException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.ErrorCodeGet">
+            <summary>Sets the shim of SQLiteException.get_ErrorCode()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.GetStockErrorMessageInt32String">
+            <summary>Sets the shim of SQLiteException.GetStockErrorMessage(Int32 errorCode, String errorMessage)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.StaticConstructor">
+            <summary>Sets the shim of SQLiteException.SQLiteException()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteException.AllInstances.ErrorCodeGet">
+            <summary>Sets the shim of SQLiteException.get_ErrorCode()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFactory">
+            <summary>Shim type of System.Data.SQLite.SQLiteFactory</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFactory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFactory.#ctor(System.Data.SQLite.SQLiteFactory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFactory.Bind(System.IServiceProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.Constructor">
+            <summary>Sets the shim of SQLiteFactory.SQLiteFactory()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.CreateCommand">
+            <summary>Sets the shim of SQLiteFactory.CreateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.CreateCommandBuilder">
+            <summary>Sets the shim of SQLiteFactory.CreateCommandBuilder()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.CreateConnection">
+            <summary>Sets the shim of SQLiteFactory.CreateConnection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.CreateConnectionStringBuilder">
+            <summary>Sets the shim of SQLiteFactory.CreateConnectionStringBuilder()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.CreateDataAdapter">
+            <summary>Sets the shim of SQLiteFactory.CreateDataAdapter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.CreateParameter">
+            <summary>Sets the shim of SQLiteFactory.CreateParameter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.GetSQLiteProviderServicesInstance">
+            <summary>Sets the shim of SQLiteFactory.GetSQLiteProviderServicesInstance()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.StaticConstructor">
+            <summary>Sets the shim of SQLiteFactory.SQLiteFactory()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.SystemIServiceProviderGetServiceType">
+            <summary>Sets the shim of SQLiteFactory.System.IServiceProvider.GetService(Type serviceType)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.CreateCommand">
+            <summary>Sets the shim of SQLiteFactory.CreateCommand()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.CreateCommandBuilder">
+            <summary>Sets the shim of SQLiteFactory.CreateCommandBuilder()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.CreateConnection">
+            <summary>Sets the shim of SQLiteFactory.CreateConnection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.CreateConnectionStringBuilder">
+            <summary>Sets the shim of SQLiteFactory.CreateConnectionStringBuilder()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.CreateDataAdapter">
+            <summary>Sets the shim of SQLiteFactory.CreateDataAdapter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.CreateParameter">
+            <summary>Sets the shim of SQLiteFactory.CreateParameter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.GetSQLiteProviderServicesInstance">
+            <summary>Sets the shim of SQLiteFactory.GetSQLiteProviderServicesInstance()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFactory.AllInstances.SystemIServiceProviderGetServiceType">
+            <summary>Sets the shim of SQLiteFactory.System.IServiceProvider.GetService(Type serviceType)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFunction">
+            <summary>Shim type of System.Data.SQLite.SQLiteFunction</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunction.#ctor(System.Data.SQLite.SQLiteFunction)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunction.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunction.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunction.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.CompareCallback16IntPtrInt32IntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.CompareCallback16(IntPtr ptr, Int32 len1, IntPtr ptr1, Int32 len2, IntPtr ptr2)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.CompareCallbackIntPtrInt32IntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.CompareCallback(IntPtr ptr, Int32 len1, IntPtr ptr1, Int32 len2, IntPtr ptr2)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.CompareStringString">
+            <summary>Sets the shim of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.Constructor">
+            <summary>Sets the shim of SQLiteFunction.SQLiteFunction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.ConvertParamsInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.ConvertParams(Int32 nArgs, IntPtr argsptr)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.Dispose">
+            <summary>Sets the shim of SQLiteFunction.Dispose()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.DisposeBoolean">
+            <summary>Sets the shim of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.FinalCallbackIntPtr">
+            <summary>Sets the shim of SQLiteFunction.FinalCallback(IntPtr context)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.FinalObject">
+            <summary>Sets the shim of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.InvokeObjectArray">
+            <summary>Sets the shim of SQLiteFunction.Invoke(Object[] args)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.RegisterFunctionType">
+            <summary>Sets the shim of SQLiteFunction.RegisterFunction(Type typ)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.SQLiteConvertGet">
+            <summary>Sets the shim of SQLiteFunction.get_SQLiteConvert()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.ScalarCallbackIntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.ScalarCallback(IntPtr context, Int32 nArgs, IntPtr argsptr)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.SetReturnValueIntPtrObject">
+            <summary>Sets the shim of SQLiteFunction.SetReturnValue(IntPtr context, Object returnValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.StaticConstructor">
+            <summary>Sets the shim of SQLiteFunction.SQLiteFunction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.StepCallbackIntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.StepCallback(IntPtr context, Int32 nArgs, IntPtr argsptr)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.StepObjectArrayInt32ObjectRef">
+            <summary>Sets the shim of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.CompareCallback16IntPtrInt32IntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.CompareCallback16(IntPtr ptr, Int32 len1, IntPtr ptr1, Int32 len2, IntPtr ptr2)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.CompareCallbackIntPtrInt32IntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.CompareCallback(IntPtr ptr, Int32 len1, IntPtr ptr1, Int32 len2, IntPtr ptr2)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.CompareStringString">
+            <summary>Sets the shim of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.ConvertParamsInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.ConvertParams(Int32 nArgs, IntPtr argsptr)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.Dispose">
+            <summary>Sets the shim of SQLiteFunction.Dispose()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.FinalCallbackIntPtr">
+            <summary>Sets the shim of SQLiteFunction.FinalCallback(IntPtr context)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.FinalObject">
+            <summary>Sets the shim of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.InvokeObjectArray">
+            <summary>Sets the shim of SQLiteFunction.Invoke(Object[] args)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.SQLiteConvertGet">
+            <summary>Sets the shim of SQLiteFunction.get_SQLiteConvert()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.ScalarCallbackIntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.ScalarCallback(IntPtr context, Int32 nArgs, IntPtr argsptr)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.SetReturnValueIntPtrObject">
+            <summary>Sets the shim of SQLiteFunction.SetReturnValue(IntPtr context, Object returnValue)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.StepCallbackIntPtrInt32IntPtr">
+            <summary>Sets the shim of SQLiteFunction.StepCallback(IntPtr context, Int32 nArgs, IntPtr argsptr)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunction.AllInstances.StepObjectArrayInt32ObjectRef">
+            <summary>Sets the shim of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute">
+            <summary>Shim type of System.Data.SQLite.SQLiteFunctionAttribute</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.#ctor(System.Data.SQLite.SQLiteFunctionAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.ArgumentsGet">
+            <summary>Sets the shim of SQLiteFunctionAttribute.get_Arguments()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.ArgumentsSetInt32">
+            <summary>Sets the shim of SQLiteFunctionAttribute.set_Arguments(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.Constructor">
+            <summary>Sets the shim of SQLiteFunctionAttribute.SQLiteFunctionAttribute()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.FuncTypeGet">
+            <summary>Sets the shim of SQLiteFunctionAttribute.get_FuncType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.FuncTypeSetFunctionType">
+            <summary>Sets the shim of SQLiteFunctionAttribute.set_FuncType(FunctionType value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.NameGet">
+            <summary>Sets the shim of SQLiteFunctionAttribute.get_Name()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.NameSetString">
+            <summary>Sets the shim of SQLiteFunctionAttribute.set_Name(String value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.AllInstances.ArgumentsGet">
+            <summary>Sets the shim of SQLiteFunctionAttribute.get_Arguments()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.AllInstances.ArgumentsSetInt32">
+            <summary>Sets the shim of SQLiteFunctionAttribute.set_Arguments(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.AllInstances.FuncTypeGet">
+            <summary>Sets the shim of SQLiteFunctionAttribute.get_FuncType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.AllInstances.FuncTypeSetFunctionType">
+            <summary>Sets the shim of SQLiteFunctionAttribute.set_FuncType(FunctionType value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.AllInstances.NameGet">
+            <summary>Sets the shim of SQLiteFunctionAttribute.get_Name()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionAttribute.AllInstances.NameSetString">
+            <summary>Sets the shim of SQLiteFunctionAttribute.set_Name(String value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx">
+            <summary>Shim type of System.Data.SQLite.SQLiteFunctionEx</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.#ctor(System.Data.SQLite.SQLiteFunctionEx)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.Constructor">
+            <summary>Sets the shim of SQLiteFunctionEx.SQLiteFunctionEx()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.GetCollationSequence">
+            <summary>Sets the shim of SQLiteFunctionEx.GetCollationSequence()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteFunctionEx.AllInstances.GetCollationSequence">
+            <summary>Sets the shim of SQLiteFunctionEx.GetCollationSequence()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteMetaDataCollectionNames">
+            <summary>Shim type of System.Data.SQLite.SQLiteMetaDataCollectionNames</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteMetaDataCollectionNames.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteMetaDataCollectionNames.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteMetaDataCollectionNames.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteMetaDataCollectionNames.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteMetaDataCollectionNames.StaticConstructor">
+            <summary>Sets the shim of SQLiteMetaDataCollectionNames.SQLiteMetaDataCollectionNames()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteParameter">
+            <summary>Shim type of System.Data.SQLite.SQLiteParameter</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameter.#ctor(System.Data.SQLite.SQLiteParameter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameter.Bind(System.Data.IDataParameter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameter.Bind(System.Data.IDbDataParameter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameter.Bind(System.ICloneable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.Clone">
+            <summary>Sets the shim of SQLiteParameter.Clone()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.Constructor">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorDbType">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(DbType dbType)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorDbTypeInt32">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(DbType parameterType, Int32 parameterSize)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorDbTypeInt32String">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(DbType parameterType, Int32 parameterSize, String sourceColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorDbTypeInt32StringDataRowVersion">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(DbType parameterType, Int32 parameterSize, String sourceColumn, DataRowVersion rowVersion)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorDbTypeObject">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(DbType dbType, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorDbTypeString">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(DbType dbType, String sourceColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorDbTypeStringDataRowVersion">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(DbType dbType, String sourceColumn, DataRowVersion rowVersion)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorSQLiteParameter">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(SQLiteParameter source)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorString">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbType">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType dbType)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbTypeInt32">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType parameterType, Int32 parameterSize)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbTypeInt32ParameterDirectionBooleanByteByteStringDataRowVersionObject">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType parameterType, Int32 parameterSize, ParameterDirection direction, Boolean isNullable, Byte precision, Byte scale, String sourceColumn, DataRowVersion rowVersion, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbTypeInt32ParameterDirectionByteByteStringDataRowVersionBooleanObject">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType parameterType, Int32 parameterSize, ParameterDirection direction, Byte precision, Byte scale, String sourceColumn, DataRowVersion rowVersion, Boolean sourceColumnNullMapping, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbTypeInt32String">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType parameterType, Int32 parameterSize, String sourceColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbTypeInt32StringDataRowVersion">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType parameterType, Int32 parameterSize, String sourceColumn, DataRowVersion rowVersion)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbTypeString">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType dbType, String sourceColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringDbTypeStringDataRowVersion">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, DbType dbType, String sourceColumn, DataRowVersion rowVersion)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ConstructorStringObject">
+            <summary>Sets the shim of SQLiteParameter.SQLiteParameter(String parameterName, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.DbTypeGet">
+            <summary>Sets the shim of SQLiteParameter.get_DbType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.DbTypeSetDbType">
+            <summary>Sets the shim of SQLiteParameter.set_DbType(DbType value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.DirectionGet">
+            <summary>Sets the shim of SQLiteParameter.get_Direction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.DirectionSetParameterDirection">
+            <summary>Sets the shim of SQLiteParameter.set_Direction(ParameterDirection value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.IsNullableGet">
+            <summary>Sets the shim of SQLiteParameter.get_IsNullable()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.IsNullableSetBoolean">
+            <summary>Sets the shim of SQLiteParameter.set_IsNullable(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ParameterNameGet">
+            <summary>Sets the shim of SQLiteParameter.get_ParameterName()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ParameterNameSetString">
+            <summary>Sets the shim of SQLiteParameter.set_ParameterName(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ResetDbType">
+            <summary>Sets the shim of SQLiteParameter.ResetDbType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SizeGet">
+            <summary>Sets the shim of SQLiteParameter.get_Size()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SizeSetInt32">
+            <summary>Sets the shim of SQLiteParameter.set_Size(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SourceColumnGet">
+            <summary>Sets the shim of SQLiteParameter.get_SourceColumn()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SourceColumnNullMappingGet">
+            <summary>Sets the shim of SQLiteParameter.get_SourceColumnNullMapping()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SourceColumnNullMappingSetBoolean">
+            <summary>Sets the shim of SQLiteParameter.set_SourceColumnNullMapping(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SourceColumnSetString">
+            <summary>Sets the shim of SQLiteParameter.set_SourceColumn(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SourceVersionGet">
+            <summary>Sets the shim of SQLiteParameter.get_SourceVersion()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.SourceVersionSetDataRowVersion">
+            <summary>Sets the shim of SQLiteParameter.set_SourceVersion(DataRowVersion value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ValueGet">
+            <summary>Sets the shim of SQLiteParameter.get_Value()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.ValueSetObject">
+            <summary>Sets the shim of SQLiteParameter.set_Value(Object value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.Clone">
+            <summary>Sets the shim of SQLiteParameter.Clone()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.DbTypeGet">
+            <summary>Sets the shim of SQLiteParameter.get_DbType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.DbTypeSetDbType">
+            <summary>Sets the shim of SQLiteParameter.set_DbType(DbType value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.DirectionGet">
+            <summary>Sets the shim of SQLiteParameter.get_Direction()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.DirectionSetParameterDirection">
+            <summary>Sets the shim of SQLiteParameter.set_Direction(ParameterDirection value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.IsNullableGet">
+            <summary>Sets the shim of SQLiteParameter.get_IsNullable()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.IsNullableSetBoolean">
+            <summary>Sets the shim of SQLiteParameter.set_IsNullable(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.ParameterNameGet">
+            <summary>Sets the shim of SQLiteParameter.get_ParameterName()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.ParameterNameSetString">
+            <summary>Sets the shim of SQLiteParameter.set_ParameterName(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.ResetDbType">
+            <summary>Sets the shim of SQLiteParameter.ResetDbType()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SizeGet">
+            <summary>Sets the shim of SQLiteParameter.get_Size()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SizeSetInt32">
+            <summary>Sets the shim of SQLiteParameter.set_Size(Int32 value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SourceColumnGet">
+            <summary>Sets the shim of SQLiteParameter.get_SourceColumn()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SourceColumnNullMappingGet">
+            <summary>Sets the shim of SQLiteParameter.get_SourceColumnNullMapping()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SourceColumnNullMappingSetBoolean">
+            <summary>Sets the shim of SQLiteParameter.set_SourceColumnNullMapping(Boolean value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SourceColumnSetString">
+            <summary>Sets the shim of SQLiteParameter.set_SourceColumn(String value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SourceVersionGet">
+            <summary>Sets the shim of SQLiteParameter.get_SourceVersion()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.SourceVersionSetDataRowVersion">
+            <summary>Sets the shim of SQLiteParameter.set_SourceVersion(DataRowVersion value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.ValueGet">
+            <summary>Sets the shim of SQLiteParameter.get_Value()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameter.AllInstances.ValueSetObject">
+            <summary>Sets the shim of SQLiteParameter.set_Value(Object value)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection">
+            <summary>Shim type of System.Data.SQLite.SQLiteParameterCollection</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.#ctor(System.Data.SQLite.SQLiteParameterCollection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.Bind(System.Data.IDataParameterCollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddObject">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddRangeArray">
+            <summary>Sets the shim of SQLiteParameterCollection.AddRange(Array values)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddRangeSQLiteParameterArray">
+            <summary>Sets the shim of SQLiteParameterCollection.AddRange(SQLiteParameter[] values)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddSQLiteParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(SQLiteParameter parameter)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddStringDbType">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(String parameterName, DbType parameterType)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddStringDbTypeInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(String parameterName, DbType parameterType, Int32 parameterSize)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddStringDbTypeInt32String">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(String parameterName, DbType parameterType, Int32 parameterSize, String sourceColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AddWithValueStringObject">
+            <summary>Sets the shim of SQLiteParameterCollection.AddWithValue(String parameterName, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.Clear">
+            <summary>Sets the shim of SQLiteParameterCollection.Clear()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.ConstructorSQLiteCommand">
+            <summary>Sets the shim of SQLiteParameterCollection.SQLiteParameterCollection(SQLiteCommand cmd)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.ContainsObject">
+            <summary>Sets the shim of SQLiteParameterCollection.Contains(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.ContainsString">
+            <summary>Sets the shim of SQLiteParameterCollection.Contains(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.CopyToArrayInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.CopyTo(Array array, Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.CountGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_Count()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.GetEnumerator">
+            <summary>Sets the shim of SQLiteParameterCollection.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.GetParameterInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.GetParameter(Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.GetParameterString">
+            <summary>Sets the shim of SQLiteParameterCollection.GetParameter(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.IndexOfObject">
+            <summary>Sets the shim of SQLiteParameterCollection.IndexOf(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.IndexOfString">
+            <summary>Sets the shim of SQLiteParameterCollection.IndexOf(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.InsertInt32Object">
+            <summary>Sets the shim of SQLiteParameterCollection.Insert(Int32 index, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.IsFixedSizeGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_IsFixedSize()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.IsReadOnlyGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.IsSynchronizedGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_IsSynchronized()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.ItemGetInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.ItemGetString">
+            <summary>Sets the shim of SQLiteParameterCollection.get_Item(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.ItemSetInt32SQLiteParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.set_Item(Int32 index, SQLiteParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.ItemSetStringSQLiteParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.set_Item(String parameterName, SQLiteParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.RemoveAtInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.RemoveAt(Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.RemoveAtString">
+            <summary>Sets the shim of SQLiteParameterCollection.RemoveAt(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.RemoveObject">
+            <summary>Sets the shim of SQLiteParameterCollection.Remove(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.SetParameterInt32DbParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.SetParameter(Int32 index, DbParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.SetParameterStringDbParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.SetParameter(String parameterName, DbParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.SyncRootGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_SyncRoot()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.Unbind">
+            <summary>Sets the shim of SQLiteParameterCollection.Unbind()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddObject">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddRangeArray">
+            <summary>Sets the shim of SQLiteParameterCollection.AddRange(Array values)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddRangeSQLiteParameterArray">
+            <summary>Sets the shim of SQLiteParameterCollection.AddRange(SQLiteParameter[] values)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddSQLiteParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(SQLiteParameter parameter)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddStringDbType">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(String parameterName, DbType parameterType)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddStringDbTypeInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(String parameterName, DbType parameterType, Int32 parameterSize)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddStringDbTypeInt32String">
+            <summary>Sets the shim of SQLiteParameterCollection.Add(String parameterName, DbType parameterType, Int32 parameterSize, String sourceColumn)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.AddWithValueStringObject">
+            <summary>Sets the shim of SQLiteParameterCollection.AddWithValue(String parameterName, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.Clear">
+            <summary>Sets the shim of SQLiteParameterCollection.Clear()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.ContainsObject">
+            <summary>Sets the shim of SQLiteParameterCollection.Contains(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.ContainsString">
+            <summary>Sets the shim of SQLiteParameterCollection.Contains(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.CopyToArrayInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.CopyTo(Array array, Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.CountGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_Count()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.GetEnumerator">
+            <summary>Sets the shim of SQLiteParameterCollection.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.GetParameterInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.GetParameter(Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.GetParameterString">
+            <summary>Sets the shim of SQLiteParameterCollection.GetParameter(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.IndexOfObject">
+            <summary>Sets the shim of SQLiteParameterCollection.IndexOf(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.IndexOfString">
+            <summary>Sets the shim of SQLiteParameterCollection.IndexOf(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.InsertInt32Object">
+            <summary>Sets the shim of SQLiteParameterCollection.Insert(Int32 index, Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.IsFixedSizeGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_IsFixedSize()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.IsReadOnlyGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.IsSynchronizedGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_IsSynchronized()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.ItemGetString">
+            <summary>Sets the shim of SQLiteParameterCollection.get_Item(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.ItemSetInt32SQLiteParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.set_Item(Int32 index, SQLiteParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.ItemSetStringSQLiteParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.set_Item(String parameterName, SQLiteParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.RemoveAtInt32">
+            <summary>Sets the shim of SQLiteParameterCollection.RemoveAt(Int32 index)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.RemoveAtString">
+            <summary>Sets the shim of SQLiteParameterCollection.RemoveAt(String parameterName)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.RemoveObject">
+            <summary>Sets the shim of SQLiteParameterCollection.Remove(Object value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.SetParameterInt32DbParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.SetParameter(Int32 index, DbParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.SetParameterStringDbParameter">
+            <summary>Sets the shim of SQLiteParameterCollection.SetParameter(String parameterName, DbParameter value)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.SyncRootGet">
+            <summary>Sets the shim of SQLiteParameterCollection.get_SyncRoot()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteParameterCollection.AllInstances.Unbind">
+            <summary>Sets the shim of SQLiteParameterCollection.Unbind()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteTransaction">
+            <summary>Shim type of System.Data.SQLite.SQLiteTransaction</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteTransaction.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteTransaction.#ctor(System.Data.SQLite.SQLiteTransaction)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteTransaction.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteTransaction.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteTransaction.Bind(System.Data.IDbTransaction)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimSQLiteTransaction.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.Commit">
+            <summary>Sets the shim of SQLiteTransaction.Commit()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.ConnectionGet">
+            <summary>Sets the shim of SQLiteTransaction.get_Connection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.ConstructorSQLiteConnectionBoolean">
+            <summary>Sets the shim of SQLiteTransaction.SQLiteTransaction(SQLiteConnection connection, Boolean deferredLock)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.DbConnectionGet">
+            <summary>Sets the shim of SQLiteTransaction.get_DbConnection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.DisposeBoolean">
+            <summary>Sets the shim of SQLiteTransaction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.IsValidBoolean">
+            <summary>Sets the shim of SQLiteTransaction.IsValid(Boolean throwError)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.IsolationLevelGet">
+            <summary>Sets the shim of SQLiteTransaction.get_IsolationLevel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.IssueRollback">
+            <summary>Sets the shim of SQLiteTransaction.IssueRollback()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.Rollback">
+            <summary>Sets the shim of SQLiteTransaction.Rollback()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.Commit">
+            <summary>Sets the shim of SQLiteTransaction.Commit()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.ConnectionGet">
+            <summary>Sets the shim of SQLiteTransaction.get_Connection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.DbConnectionGet">
+            <summary>Sets the shim of SQLiteTransaction.get_DbConnection()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of SQLiteTransaction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.IsValidBoolean">
+            <summary>Sets the shim of SQLiteTransaction.IsValid(Boolean throwError)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.IsolationLevelGet">
+            <summary>Sets the shim of SQLiteTransaction.get_IsolationLevel()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.IssueRollback">
+            <summary>Sets the shim of SQLiteTransaction.IssueRollback()</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimSQLiteTransaction.AllInstances.Rollback">
+            <summary>Sets the shim of SQLiteTransaction.Rollback()</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimUpdateEventArgs">
+            <summary>Shim type of System.Data.SQLite.UpdateEventArgs</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimUpdateEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimUpdateEventArgs.#ctor(System.Data.SQLite.UpdateEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimUpdateEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.ShimUpdateEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimUpdateEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.ShimUpdateEventArgs.ConstructorStringStringUpdateEventTypeInt64">
+            <summary>Sets the shim of UpdateEventArgs.UpdateEventArgs(String database, String table, UpdateEventType eventType, Int64 rowid)</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.ShimUpdateEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.StubSQLiteFunction">
+            <summary>Stub type of System.Data.SQLite.SQLiteFunction</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunction.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunction.Compare(System.String,System.String)">
+            <summary>Sets the stub of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunction.CompareStringString">
+            <summary>Sets the stub of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunction.Dispose(System.Boolean)">
+            <summary>Sets the stub of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunction.DisposeBoolean">
+            <summary>Sets the stub of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunction.Final(System.Object)">
+            <summary>Sets the stub of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunction.FinalObject">
+            <summary>Sets the stub of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunction.InitializeStub">
+            <summary>Initializes a new instance of type StubSQLiteFunction</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunction.Invoke(System.Object[])">
+            <summary>Sets the stub of SQLiteFunction.Invoke(Object[] args)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunction.InvokeObjectArray">
+            <summary>Sets the stub of SQLiteFunction.Invoke(Object[] args)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunction.Step(System.Object[],System.Int32,System.Object@)">
+            <summary>Sets the stub of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunction.StepObjectArrayInt32ObjectRef">
+            <summary>Sets the stub of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.StubSQLiteFunction.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.StubSQLiteFunction.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.StubSQLiteFunction.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Data.SQLite.Fakes.StubSQLiteFunctionEx">
+            <summary>Stub type of System.Data.SQLite.SQLiteFunctionEx</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.Compare(System.String,System.String)">
+            <summary>Sets the stub of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.CompareStringString">
+            <summary>Sets the stub of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.Dispose(System.Boolean)">
+            <summary>Sets the stub of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.DisposeBoolean">
+            <summary>Sets the stub of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.Final(System.Object)">
+            <summary>Sets the stub of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.FinalObject">
+            <summary>Sets the stub of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.InitializeStub">
+            <summary>Initializes a new instance of type StubSQLiteFunctionEx</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.Invoke(System.Object[])">
+            <summary>Sets the stub of SQLiteFunction.Invoke(Object[] args)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.InvokeObjectArray">
+            <summary>Sets the stub of SQLiteFunction.Invoke(Object[] args)</summary>
+        </member>
+        <member name="M:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.Step(System.Object[],System.Int32,System.Object@)">
+            <summary>Sets the stub of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="F:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.StepObjectArrayInt32ObjectRef">
+            <summary>Sets the stub of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Data.SQLite.Fakes.StubSQLiteFunctionEx.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

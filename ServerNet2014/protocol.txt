@@ -1,0 +1,39 @@
+ 1. Client Connects
+ 2. Client sends Auth:Username<EOF>
+ 2.1. Server stores the username in db if it's a new one
+ 3. Server sends the friend list Friends:1|F1|UID,0|F2|UID,...,0|FN|UID<EOF> where 1 and 0 is the online status
+ 3.1. Server sends his uid UID:43234<EOF>
+ 4. Server sends to all his online friends the signal that the client has become online Online:UID<EOF>
+ 5. User disconnects send Disconnect:UID<EOF>
+ 6. Server sends to all his online firends the signal that the client is offline Offline:UID<EOF>
+ 
+ 
+ chatting:
+ 
+ User is sending MessageTo:User|||Message<EOF>
+ 
+ 
+ befriending
+ 
+ User is sending BefriendTo:UserName<EOF>
+ the server looks in db to see if there are already friends or rejected states then... 
+ IF the target user doesn't exists server is sending back BefriendToError:User<EOF>
+ IF the target user already rejected the request the server is sending back BefriendToResponse:0User<EOF>
+ The server is sending to User FriendRequestFrom:User<EOF>
+ The To user will respond with FriendResponseTo:1User<EOF> 1 for accept 0 for reject
+ The Server will send to the initiator BefriendToResponse:1User<EOF>
+ IF rejected Then record in db
+ IF accepted add the friendship in db
+ 
+ blocking
+ 
+ TBD
+ 
+ file transfer:
+ 
+ User is sending FileTo:UID|FILENAME|FILESIZE|TransferID<EOF>
+ Server is sending to the designated user FileFrom:UID|FILENAME|FILESIZE|TransferID<EOF>
+ The destination will AcceptFrom:UID|TransferId<EOF>
+ 
+ 
+ 

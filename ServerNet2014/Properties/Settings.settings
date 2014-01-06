@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServerNet2014.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dbfile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DefaultDB.db3</Value>
+    </Setting>
+    <Setting Name="closeMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server shutting down...</Value>
+    </Setting>
+    <Setting Name="serverPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">9095</Value>
+    </Setting>
+    <Setting Name="maxClients" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
