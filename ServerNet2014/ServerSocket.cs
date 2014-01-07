@@ -28,7 +28,7 @@ namespace ServerNet2014
         public const string S_BEFRIENDTORESPONSE = "BefriendToResponse:{0}{1}:{2}<EOF>";
         public const string S_FRIENDREQUESTFROM = "FriendRequestFrom:{0}<EOF>";
         public const string R_FRIENDRESPONSETO = "FriendResponseTo";
-
+        public const string S_NEWFRIEND = "NewFriend:{0}|{1}<EOF>";
 
     }
 
@@ -183,7 +183,7 @@ namespace ServerNet2014
             }catch(SocketException e)
             {
                 //TODO: notify all his friends that this user is now offline...
-                Output = "Client id {} disconected...";
+                Output = string.Format("Client id {0} disconected, error code: {1}", Connections[handler], e.SocketErrorCode);
                 OnClientDisconnected(handler);
                 return;
             }
@@ -229,7 +229,7 @@ namespace ServerNet2014
             List<int> uids = model.getFriedsIdsForUID(Connections[handler]);
             foreach(int uid in uids)
             {
-                SendToUserId(uid, string.Format(Messages.S_OFFLINE, uid));
+                SendToUserId(uid, string.Format(Messages.S_OFFLINE, Connections[handler]));
             }
             Connections.Remove(handler);
         }
@@ -386,7 +386,7 @@ namespace ServerNet2014
             model.UpdateInviteAsAccepted(inviteId);
             model.addFriendship(fromUserId, toUserId);
             SendToUserId(toUserId, string.Format(Messages.S_BEFRIENDTORESPONSE, 1, fromUser.ScreenName, fromUserId));
-            
+            SendToSocket(handler, string.Format(Messages.S_NEWFRIEND, toUserId, toUserScreenName));
         }
         
         //private void SendShutDownCallback(IAsyncResult ar)
