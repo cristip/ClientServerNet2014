@@ -26,17 +26,24 @@ namespace ClientNet2014
         public string FriendName { get; set; }
         public int Status { get; set; }
     }
+    public class FriendOnlineEvent : EventArgs
+    {
+        public ClientUser clientUser { get; set; }
+    }
 
     public class Messages
     {
         public const string S_AUTH = "Auth:{0}<EOF>";
         public const string R_UID = "UID";
         public const string R_FRIENDLIST = "Friends";
+        public const string R_ONLINE = "Online";
+        public const string R_OFFLINE = "Offline";
 
         public const string S_BEFRIENDTO = "BefriendTo:{0}<EOF>";
         public const string R_FRIENDREQUESTFROM = "FriendRequestFrom";
         public const string S_FRIENDRESPONSETO = "FriendResponseTo:{0}{1}<EOF>";
         public const string R_BEFRIENDTORESPONSE = "BefriendToResponse";
+        public const string R_NEWFRIEND = "NewFriend";
     }
 
     // State object for receiving data from remote device.
@@ -67,7 +74,8 @@ namespace ClientNet2014
         public event EventHandler<OutputEvent> Changed;
         public event EventHandler<AuthEvent> Authenticated;
         public event EventHandler<FriendRequestEvent> FriendshipRequested;
-        public event EventHandler<FriendResponseEvent> FrinshipReplied;
+        public event EventHandler<FriendResponseEvent> FriendshipReplied;
+        public event EventHandler<FriendOnlineEvent> FriendOnline;
 
         private ClientModelLocator model = ClientModelLocator.Instance;
         private string output;
@@ -305,8 +313,29 @@ namespace ClientNet2014
                         string[] friendData = friend.Split('|');
                         ClientUser friendObj = new ClientUser(friendData[2], friendData[1]);
                         friendObj.IsOnline = friendData[0] == "1";
+                        //model.Friends.RaiseListChangedEvents = true;
                         model.Friends.Add(friendObj);
                     }
+                    break;
+                case Messages.R_ONLINE:
+                    ClientUser onlineFriend = model.getFriendById(parts[1]);
+                    if(null == onlineFriend)
+                    {
+                        Output = string.Format("Could not find the friend with Id: {0}", parts[1]);
+                        return;
+                    }
+                    onlineFriend.IsOnline = true;
+                    dispatchOnlineFriend(onlineFriend);
+                    break;
+                case Messages.R_OFFLINE:
+                    ClientUser offlineFriend = model.getFriendById(parts[1]);
+                    if (null == offlineFriend)
+                    {
+                        Output = string.Format("Could not find the friend with Id: {0}", parts[1]);
+                        return;
+                    }
+                    offlineFriend.IsOnline = false;
+                    dispatchOnlineFriend(offlineFriend);
                     break;
                 case Messages.R_FRIENDREQUESTFROM:
                     EventHandler<FriendRequestEvent> friendshiphandler = FriendshipRequested;
@@ -316,7 +345,7 @@ namespace ClientNet2014
                     }
                     break;
                 case Messages.R_BEFRIENDTORESPONSE:
-                    EventHandler<FriendResponseEvent> frienshipreplyhandler = FrinshipReplied;
+                    EventHandler<FriendResponseEvent> frienshipreplyhandler = FriendshipReplied;
                     int friendResponseResult = int.Parse(parts[1].Substring(0, 1));
                     string friendScreenName = parts[1].Substring(1);
                     string friendId = parts[2];
@@ -332,6 +361,21 @@ namespace ClientNet2014
                         
                     }
                     break;
+                case Messages.R_NEWFRIEND:
+                    string[] newFriendData = parts[1].Split('|');
+                    ClientUser newFriend = new ClientUser(newFriendData[0], newFriendData[1]);
+                    newFriend.IsOnline = true;
+                    model.Friends.Add(newFriend);
+                    break;
+            }
+        }
+
+        private void dispatchOnlineFriend(ClientUser onlineFriend)
+        {
+            EventHandler<FriendOnlineEvent> handler = FriendOnline;
+            if(null != handler)
+            {
+                handler(this, new FriendOnlineEvent() { clientUser = onlineFriend});
             }
         }
 

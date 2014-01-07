@@ -19,8 +19,8 @@ namespace ClientNet2014
         delegate void SetTextCallback(string text);
         delegate void ShowAddFriendDialogDelegate(string friendName);
         delegate void ShowAddFriendDialogResponseDelegate(string friendName, int status);
-
-        BindingSource bs;
+        delegate void ListChangedDelegate();
+        delegate void FriendOnlineDelegate(ClientUser clientUser);
 
         public Form1()
         {
@@ -28,21 +28,47 @@ namespace ClientNet2014
 
             this.Load += Form1_Load;
 
-            optionsToolStripMenuItem_Click(null, null);
+            
 
            
         }
 
         void Form1_Load(object sender, EventArgs e)
         {
-            bs = new BindingSource();
-            bs.DataSource = model.Friends;
+            optionsToolStripMenuItem_Click(null, null);
 
+            
+            model.Friends.ListChanged += Friends_ListChanged;
             //Binding friendsBinding = new Binding("DataSource", model, "Friends", false, DataSourceUpdateMode.OnPropertyChanged);
             this.listBox1.ValueMember = "Id";
-            this.listBox1.DataSource = bs;
-            //this.listBox1.DataBindings.CollectionChanged += DataBindings_CollectionChanged;
-            //this.listBox1.DataBindings.Add(friendsBinding);
+            this.listBox1.DisplayMember = "DisplayValue";
+
+            this.listBox1.DoubleClick += listBox1_DoubleClick;
+            
+        }
+
+        void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            
+        }
+
+        void Friends_ListChanged(object sender, ListChangedEventArgs e)
+        {
+            if(this.InvokeRequired)
+            {
+                ListChangedDelegate d = new ListChangedDelegate(RefreshListBox);
+                this.Invoke(d);
+            }else
+            {
+                RefreshListBox();
+            }
+            
+        }
+
+        private void RefreshListBox()
+        {
+            this.listBox1.DataSource = null;
+            this.listBox1.DataSource = model.Friends;
         }
 
         
@@ -108,8 +134,30 @@ namespace ClientNet2014
             clientSocket.Changed += ClientSocket_Changed;
             clientSocket.FriendshipRequested += ClientSocket_FriendRequested;
             clientSocket.Authenticated += ClientSocket_Authenticated;
-            clientSocket.FrinshipReplied += clientSocket_FrinshipReplied;
+            clientSocket.FriendshipReplied += clientSocket_FrinshipReplied;
+            clientSocket.FriendOnline += clientSocket_FriendOnline;
             clientSocket.connect();
+        }
+
+        void clientSocket_FriendOnline(object sender, FriendOnlineEvent e)
+        {
+            Friends_ListChanged(null, null); if (this.InvokeRequired)
+            {
+                FriendOnlineDelegate d = new FriendOnlineDelegate(displayOnlineDialog);
+                this.Invoke(d, new object[]{e.clientUser});
+            }
+            else
+            {
+                displayOnlineDialog(e.clientUser);
+            }
+        }
+
+        private void displayOnlineDialog(ClientUser friend)
+        {
+            this.listBox1.DataSource = null;
+            this.listBox1.DataSource = model.Friends;
+            MessageBox.Show(string.Format("{0} is now {1}!", friend.ScreenName, friend.IsOnline ? "online" : "offline"), friend.IsOnline ? "Online" : "Offline", MessageBoxButtons.OK , MessageBoxIcon.Information);
+            
         }
 
         void clientSocket_FrinshipReplied(object sender, FriendResponseEvent e)
@@ -211,6 +259,12 @@ namespace ClientNet2014
             AddFriendDialogForm addFriendDialog = (AddFriendDialogForm)sender;
             clientSocket.sendAddFriendMessage(addFriendDialog.FriendName);
         }
+
+        private void aboutTema3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.model.Friends.RaiseListChangedEvents = true ;
+        }
+
         
     }
 }

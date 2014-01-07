@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ClientNet2014
 {
-    class ClientUser
+    public class ClientUser
     {
         private String screenName;
         private String id;
@@ -32,6 +32,14 @@ namespace ClientNet2014
         {
             get { return isOnline; }
             set { isOnline = value; }
+        }
+
+        public string DisplayValue
+        {
+            get
+            {
+                return ToString();
+            }
         }
 
         public override string ToString()

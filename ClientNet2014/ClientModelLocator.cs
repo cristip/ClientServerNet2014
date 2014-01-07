@@ -12,6 +12,7 @@ namespace ClientNet2014
         private static ClientModelLocator Me;
         private ClientModelLocator()
         {
+            
         }
 
         private String serverAddr;
@@ -83,6 +84,18 @@ namespace ClientNet2014
                 }
                 return Me;
             }
+        }
+
+        internal ClientUser getFriendById(string p)
+        {
+            foreach(ClientUser clientUser in friends)
+            {
+                if(clientUser.Id == p)
+                {
+                    return clientUser;
+                }
+            }
+            return null;
         }
     }
 }
