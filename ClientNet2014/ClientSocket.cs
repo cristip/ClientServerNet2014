@@ -44,6 +44,14 @@ namespace ClientNet2014
         public const string S_FRIENDRESPONSETO = "FriendResponseTo:{0}{1}<EOF>";
         public const string R_BEFRIENDTORESPONSE = "BefriendToResponse";
         public const string R_NEWFRIEND = "NewFriend";
+
+        public const string S_CHATTOUID = "MessageTo:{0},{1}<EOF>";
+        public const string R_CHATFROMUID = "MessageFrom";
+
+        public const string S_ASKTORECEIVE = "FileTo:{0},{1},{2}<EOF>";
+        public const string R_ASKTOACCEPT = "FileFrom";
+        public const string S_ACCEPTFILE = "AcceptFileReply:{0},{1},{2}<EOF>";
+        public const string R_ACCEPTED = "AcceptFileOfferFrom";
     }
 
     // State object for receiving data from remote device.
@@ -76,6 +84,9 @@ namespace ClientNet2014
         public event EventHandler<FriendRequestEvent> FriendshipRequested;
         public event EventHandler<FriendResponseEvent> FriendshipReplied;
         public event EventHandler<FriendOnlineEvent> FriendOnline;
+        public event EventHandler<ChatFromFriend> ChatReceived;
+        public event EventHandler<ReceiveFileFromFriend> FileOfferReceived;
+        public event EventHandler<AcceptedFileByFriend> FileOfferAccepted;
 
         private ClientModelLocator model = ClientModelLocator.Instance;
         private string output;
@@ -294,20 +305,22 @@ namespace ClientNet2014
         private void GotResponse(string content)
         {
             Output = string.Format("Received message {0}.", content);
-            string[] parts = content.Split(':');
-            string message = parts[0];
+            //string[] parts = content.Split(':');
+            int index = content.IndexOf(':');
+            string message = content.Substring(0, index);
+            string dataContent = content.Substring(index + 1);
             switch (message)
             {
                 case Messages.R_UID:
-                    model.clientUser = new ClientUser(parts[1], model.ScreenName);
+                    model.clientUser = new ClientUser(dataContent, model.ScreenName);
                     EventHandler<AuthEvent> authhandler = Authenticated;
                     if (null != authhandler)
                     {
-                        authhandler(this, new AuthEvent() { UID = parts[1] });
+                        authhandler(this, new AuthEvent() { UID = dataContent });
                     }
                     break;
                 case Messages.R_FRIENDLIST:
-                    string[] friends = parts[1].Split(',');
+                    string[] friends = dataContent.Split(',');
                     foreach(string friend in friends)
                     {
                         string[] friendData = friend.Split('|');
@@ -318,20 +331,20 @@ namespace ClientNet2014
                     }
                     break;
                 case Messages.R_ONLINE:
-                    ClientUser onlineFriend = model.getFriendById(parts[1]);
+                    ClientUser onlineFriend = model.getFriendById(dataContent);
                     if(null == onlineFriend)
                     {
-                        Output = string.Format("Could not find the friend with Id: {0}", parts[1]);
+                        Output = string.Format("Could not find the friend with Id: {0}", dataContent);
                         return;
                     }
                     onlineFriend.IsOnline = true;
                     dispatchOnlineFriend(onlineFriend);
                     break;
                 case Messages.R_OFFLINE:
-                    ClientUser offlineFriend = model.getFriendById(parts[1]);
+                    ClientUser offlineFriend = model.getFriendById(dataContent);
                     if (null == offlineFriend)
                     {
-                        Output = string.Format("Could not find the friend with Id: {0}", parts[1]);
+                        Output = string.Format("Could not find the friend with Id: {0}", dataContent);
                         return;
                     }
                     offlineFriend.IsOnline = false;
@@ -341,14 +354,19 @@ namespace ClientNet2014
                     EventHandler<FriendRequestEvent> friendshiphandler = FriendshipRequested;
                     if (null != friendshiphandler)
                     {
-                        friendshiphandler(this, new FriendRequestEvent() { FriendName = parts[1] });
+                        friendshiphandler(this, new FriendRequestEvent() { FriendName = dataContent });
                     }
                     break;
                 case Messages.R_BEFRIENDTORESPONSE:
                     EventHandler<FriendResponseEvent> frienshipreplyhandler = FriendshipReplied;
-                    int friendResponseResult = int.Parse(parts[1].Substring(0, 1));
-                    string friendScreenName = parts[1].Substring(1);
-                    string friendId = parts[2];
+
+                    index = dataContent.IndexOf(':');
+                    string data1 = dataContent.Substring(0, index);
+                    string data2 = dataContent.Substring(index + 1);
+
+                    int friendResponseResult = int.Parse(data1.Substring(0, 1));
+                    string friendScreenName = data1.Substring(1);
+                    string friendId = data2;
                     if (null != frienshipreplyhandler)
                     {
                         frienshipreplyhandler(this, new FriendResponseEvent() { FriendName = friendScreenName, Status = friendResponseResult });
@@ -362,13 +380,40 @@ namespace ClientNet2014
                     }
                     break;
                 case Messages.R_NEWFRIEND:
-                    string[] newFriendData = parts[1].Split('|');
+                    string[] newFriendData = dataContent.Split('|');
                     ClientUser newFriend = new ClientUser(newFriendData[0], newFriendData[1]);
                     newFriend.IsOnline = true;
                     model.Friends.Add(newFriend);
                     break;
+                case Messages.R_CHATFROMUID:
+                    index = dataContent.IndexOf(',');
+                    string friendUID = dataContent.Substring(0, index);
+                    string chatDataContent = dataContent.Substring(index + 1);
+                    EventHandler<ChatFromFriend> chatfromHandler = ChatReceived;
+                    if(null != chatfromHandler)
+                    {
+                        chatfromHandler(this, new ChatFromFriend() { uid = friendUID, content = chatDataContent });
+                    }
+                    break;
+                case Messages.R_ASKTOACCEPT:
+                    string[] fileData = dataContent.Split(',');
+                    EventHandler<ReceiveFileFromFriend> receiveFromHandler = FileOfferReceived;
+                    if(null != receiveFromHandler)
+                    {
+                        receiveFromHandler(this, new ReceiveFileFromFriend() { fromUID = fileData[0], fileName = fileData[1], fileSize = fileData[2] });
+                    }
+                    break;
+                case Messages.R_ACCEPTED:
+                    string[] acceptData = dataContent.Split(',');
+                    EventHandler<AcceptedFileByFriend> acceptedByHandler = FileOfferAccepted;
+                    if (null != acceptedByHandler)
+                    {
+                        acceptedByHandler(this, new AcceptedFileByFriend() { hasAccepted = (acceptData[0] == "1"), fileName = acceptData[1], uid=acceptData[2]});
+                    }
+                    break;
             }
         }
+
 
         private void dispatchOnlineFriend(ClientUser onlineFriend)
         {
@@ -433,6 +478,31 @@ namespace ClientNet2014
         {
             Output = string.Format("Sending Reject friend to {0}", friendName);
             sendMessage(string.Format(Messages.S_FRIENDRESPONSETO, 0, friendName));
+        }
+
+        internal void sentChatMessage(string uid, string content)
+        {
+            sendMessage(string.Format(Messages.S_CHATTOUID, uid, content));
+        }
+
+        internal void askToReceiveFile(string uid, string fileName, string fileSize)
+        {
+            sendMessage(string.Format(Messages.S_ASKTORECEIVE, uid, fileName, fileSize));
+        }
+
+        internal void sendRejectFile(string uid, string fileName)
+        {
+            sendMessage(string.Format(Messages.S_ACCEPTFILE, 0, uid, fileName));
+        }
+
+        internal void sendAcceptFile(string uid, string fileName)
+        {
+            sendMessage(string.Format(Messages.S_ACCEPTFILE, 1, uid, fileName));
+        }
+
+        internal void sendCanceledFileTransfer(string fromUID, string fileName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

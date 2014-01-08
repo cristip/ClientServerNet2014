@@ -30,6 +30,13 @@ namespace ServerNet2014
         public const string R_FRIENDRESPONSETO = "FriendResponseTo";
         public const string S_NEWFRIEND = "NewFriend:{0}|{1}<EOF>";
 
+        public const string R_CHATTOUID = "MessageTo";
+        public const string S_CHATFROMUID = "MessageFrom:{0},{1}<EOF>";
+
+        public const string R_ASKTORECEIVE = "FileTo";
+        public const string S_ASKTOACCEPT = "FileFrom:{0},{1},{2}<EOF>";
+        public const string R_ACCEPTFILE = "AcceptFileReply";
+        public const string S_ACCEPTFILE = "AcceptFileOfferFrom:{0},{1},{2}<EOF>";
     }
 
 
@@ -266,21 +273,60 @@ namespace ServerNet2014
             {
                 return;
             }
-            string[] parts = content.Split(':');
-            string message = parts[0];
+            int index = content.IndexOf(':');
+            string message = content.Substring(0, index);
+            string dataContent = content.Substring(index + 1);
             switch(message)
             {
                 case Messages.R_AUTH:
-                    this.Authenticate(handler, parts[1]);
+                    this.Authenticate(handler, dataContent);
                     break;
                 case Messages.R_BEFRIENDTO:
-                    this.InitializeFriendship(handler, parts[1]);
+                    this.InitializeFriendship(handler, dataContent);
                     break;
                 case Messages.R_FRIENDRESPONSETO:
-                    this.FriendshipResponse(handler, parts[1]);
+                    this.FriendshipResponse(handler, dataContent);
+                    break;
+                case Messages.R_CHATTOUID:
+                    this.ForwardMessageTo(handler, dataContent);
+                    break;
+                case Messages.R_ASKTORECEIVE:
+                    this.AskToReceiveFile(handler, dataContent);
+                    break;
+                case Messages.R_ACCEPTFILE:
+                    this.AcceptFile(handler, dataContent);
                     break;
             }
 
+        }
+
+        private void AcceptFile(Socket handler, string dataContent)
+        {
+            string[] fileOfferData = dataContent.Split(',');
+            string toUserId = fileOfferData[1];
+            SendToUserId(int.Parse(toUserId), string.Format(Messages.S_ACCEPTFILE, fileOfferData[0], Connections[handler], fileOfferData[2]));
+        }
+
+        private void AskToReceiveFile(Socket handler, string dataMessage)
+        {
+            string[] fileOfferData = dataMessage.Split(',');
+            int toUserId = int.Parse(fileOfferData[0]);
+            string fileName = fileOfferData[1];
+            string fileSize = fileOfferData[2];
+            SendToUserId(toUserId, string.Format(Messages.S_ASKTOACCEPT, Connections[handler], fileName, fileSize));
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="handler"></param>
+        /// <param name="dataMessage">3432432,random text message</param>
+        private void ForwardMessageTo(Socket handler, string dataMessage)
+        {
+            int index = dataMessage.IndexOf(',');
+            string uid = dataMessage.Substring(0, index);
+            string content = dataMessage.Substring(index+1);
+            SendToUserId(int.Parse(uid), string.Format(Messages.S_CHATFROMUID, Connections[handler], content));
         }
 
         private void Authenticate(Socket handler, string username)
