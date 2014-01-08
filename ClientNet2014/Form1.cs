@@ -203,8 +203,8 @@ namespace ClientNet2014
 
         void displayFileOffer(string uid, string fileName, string fileSize)
         {
-            DialogResult dialog = MessageBox.Show(string.Format("{0} is sending you the file: {1} [{2}MB]. Do you accept this file?", model.getFriendById(uid), fileName, fileSize), "File Transfer Request", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(dialog != DialogResult.OK)
+            DialogResult dialog = MessageBox.Show(string.Format("{0} is sending you the file: {1} [{2}B]. Do you accept this file?", model.getFriendById(uid), fileName, (int.Parse(fileSize) /1024)), "File Transfer Request", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(dialog != DialogResult.Yes)
             {
                 //reject file
                 clientSocket.sendRejectFile(uid, fileName);
@@ -256,49 +256,66 @@ namespace ClientNet2014
 
         void cw_TransferFile(object sender, TransferFileEvent e)
         {
-            ProcessRead(e.filePath).Wait();
+            //ProcessRead(e.filePath, e.toUID).Wait();
+            //StorageFile selectedFile = ;
+            
+            using (StreamReader reader = new StreamReader(e.filePath))
+            {
+                //while ((nextLine = await reader.ReadLineAsync()) != null)
+                //{
+                //    contents.AppendFormat("{0}. ", lineCounter);
+                //    contents.Append(nextLine);
+                //    contents.AppendLine();
+                //    lineCounter++;
+                //    if (lineCounter > 3)
+                //    {
+                //        contents.AppendLine("Only first 3 lines shown.");
+                //        break;
+                //    }
+                //}
+
+            }
 
         }
 
-        async Task ProcessRead(string filePath)
-        {
-            if (File.Exists(filePath) == false)
-            {
-                MessageBox.Show(string.Format("Error opening {0}: file not found", filePath), "File not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                try
-                {
-                    string text = await ReadTextAsync(filePath);
-                    Console.WriteLine(text);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-        }
-        async Task<string> ReadTextAsync(string filePath)
-        {
-            using (FileStream sourceStream = new FileStream(filePath,
-                FileMode.Open, FileAccess.Read, FileShare.Read,
-                bufferSize: 4096, useAsync: true))
-            {
-                //StringBuilder sb = new StringBuilder();
+        //async Task ProcessRead(string filePath, string toUID)
+        //{
+        //    if (File.Exists(filePath) == false)
+        //    {
+        //        MessageBox.Show(string.Format("Error opening {0}: file not found", filePath), "File not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //    else
+        //    {
+        //        try
+        //        {
+        //            string text = await ReadTextAsync(filePath);
+        //            Console.WriteLine(text);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine(ex.Message);
+        //        }
+        //    }
+        //}
+        //async Task<string> ReadTextAsync(string filePath)
+        //{
+        //    using (FileStream sourceStream = new FileStream(filePath,
+        //        FileMode.Open, FileAccess.Read, FileShare.Read,
+        //        bufferSize: 4096, useAsync: true))
+        //    {
+        //        StringBuilder sb = new StringBuilder();
 
-                byte[] buffer = new byte[0x1000];
-                int numRead;
-                while ((numRead = await sourceStream.ReadAsync(buffer, 0, buffer.Length)) != 0)
-                {
-                    //clientSocket.sendDataChunk()
-                   // string text = Encoding.Unicode.GetString(buffer, 0, numRead);
-                   // sb.Append(text);
-                }
+        //        byte[] buffer = new byte[0x1000];
+        //        int numRead;
+        //        while ((numRead = await sourceStream.ReadAsync(buffer, 0, buffer.Length)) != 0)
+        //        {
+        //            string text = Encoding.Unicode.GetString(buffer, 0, numRead);
+        //            sb.Append(text);
+        //        }
 
-                return "";
-            }
-        }
+        //        return sb.ToString();
+        //    }
+        //}
 
         void cw_AskToSendFile(object sender, SendFileEvent e)
         {

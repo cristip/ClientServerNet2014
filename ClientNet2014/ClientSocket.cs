@@ -408,7 +408,7 @@ namespace ClientNet2014
                     EventHandler<AcceptedFileByFriend> acceptedByHandler = FileOfferAccepted;
                     if (null != acceptedByHandler)
                     {
-                        acceptedByHandler(this, new AcceptedFileByFriend() { hasAccepted = (acceptData[0] == "1"), fileName = acceptData[1], uid=acceptData[2]});
+                        acceptedByHandler(this, new AcceptedFileByFriend() { hasAccepted = (acceptData[0] == "1"), uid = acceptData[1], fileName = acceptData[2] });
                     }
                     break;
             }

@@ -63,14 +63,7 @@ namespace ClientNet2014
         {
             OpenFileDialog fd = new OpenFileDialog();
             fd.ShowDialog();
-            fd.FileOk += fd_FileOk;
-            
-        }
-
-        void fd_FileOk(object sender, CancelEventArgs e)
-        {
-            OpenFileDialog fd = (OpenFileDialog)sender;
-            if(null == fd.FileName)
+            if (null == fd.FileName)
             {
                 return;
             }
@@ -81,10 +74,12 @@ namespace ClientNet2014
             EventHandler<SendFileEvent> handler = AskToSendFile;
             if (null != handler)
             {
-                handler(this, new SendFileEvent() { fileName = fd.SafeFileName, fileSize = fi.Length.ToString()});
+                handler(this, new SendFileEvent() { fileName = fd.SafeFileName, fileSize = fi.Length.ToString() });
             }
             
         }
+
+       
 
 
         internal void initializeFileTransfer(bool hasAccepted, string fileName)

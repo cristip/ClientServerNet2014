@@ -30,7 +30,8 @@ namespace ServerNet2014
             {
                 Directory.CreateDirectory(model.DefaultPath);
                 model.ServerFilePath = Path.Combine(model.DefaultPath, Properties.Settings.Default.dbfile);
-                File.Copy(Properties.Settings.Default.dbfile, model.ServerFilePath);
+                string filePath = "DefaultDB.db3";
+                File.Copy(filePath, model.ServerFilePath);
             }
             else
             {
